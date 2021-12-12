@@ -1,0 +1,72 @@
+/* Why_Me */
+
+.why_me_header {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.why_me_header_text {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.why_me {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px 0;
+}
+
+.why_me_item {
+    width: 33.33333%;
+    text-align: center;
+    padding: 0 40px;
+    margin: 25px 0;
+}
+
+.why_me_title {
+    font-size: 20px;
+    font-style: italic;
+    color: #0000FF;
+    text-transform: uppercase;
+}
+
+.why_me_text {
+    font-size: 16px;
+    color: #696969;
+}
+
+/* Services */
+
+.services {
+    background-color: #f2f2f2;
+    background-size: cover;
+    display: flex;
+
+}
+
+.services_inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services_item {
+    width: 50%;
+    padding: 35px 25px;
+}
+
+
+.services_header {
+    border-bottom: 1px solid red;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.services_text {
+    padding: 10px 30px;
+    font-size: 25px;
+    font-style: italic;
+}

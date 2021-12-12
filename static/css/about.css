@@ -1,0 +1,21 @@
+/* Info */
+
+.info {
+    display: flex;
+}
+
+.info_item {
+    width: 50%;
+}
+
+.info_block {
+    border: 1px solid red;
+    word-wrap: break-word;
+}
+
+.info_text {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+}

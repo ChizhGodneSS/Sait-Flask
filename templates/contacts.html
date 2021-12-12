@@ -1,0 +1,41 @@
+{% extends 'shablon.html' %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+{% block title %}
+Контакты
+{% endblock %}
+
+{% block section_title %}
+    <h1 class="section_title">Как со мной связаться?</h1>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="contacts_header">
+        <h1 class="contacts_header_text"> Вы можете оставить заявку или связаться со мной на прямую</h1>
+    </div>
+    <div class="contacts">
+        <div class="contacts_item">
+            <form  name="newform" method="post">
+                <div class="form_inputs">
+                    <p> Имя <span class="red">*</span></p>
+                    <input class="input" type="text" name="name" id="name">
+                    <p> Отчество <span class="red">*</span></p>
+                    <input class="input" type="text" name="surname" id="surname">
+                    <p> Почта <span class="red">*</span></p>
+                    <input class="input" type="text" name="mail" id="mail">
+                </div>
+                <input type="submit" class="button_form" value="Отправить заявку">
+            </form>
+        </div>
+        <div class="contacts_item">
+            <div class="contacts_block">
+                <h3 class="contacts_block_text">Моя почта: led_for_people@mail.ru <br />
+                    Телефон: 8-916-299-98-49
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

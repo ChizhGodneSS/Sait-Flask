@@ -1,0 +1,109 @@
+{% extends 'shablon.html' %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+{% block title %}
+Услуги
+{% endblock %}
+
+{% block section_title %}
+    <h1 class="section_title">Какие услуги я могу оказать и почему именно Я?</h1>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="why_me_header">
+        <h1 class="why_me_header_text">Почему стоит заказать услуги у меня?</h1>
+    </div>
+</div>
+<div class="container">
+    <div class="why_me">
+        <div class="why_me_item">
+            <img class="why_me_icon" src="{{ url_for('static', filename='images/icons/1.png') }}" alt="">
+            <h4 class="why_me_title">Сервис</h4>
+            <div class="why_me_text">Я забочусь о качестве предоставляемых мною услуг</div>
+        </div>
+        <div class="why_me_item">
+            <img class="why_me_icon" src="{{ url_for('static', filename='images/icons/2.png') }}" alt="">
+            <h4 class="why_me_title">Гарантия</h4>
+            <div class="why_me_text">Я компенсирую все штрафы, полученные по моей вине</div>
+        </div>
+        <div class="why_me_item">
+            <img class="why_me_icon" src="{{ url_for('static', filename='images/icons/3.png') }}" alt="">
+            <h4 class="why_me_title">Цена</h4>
+            <div class="why_me_text">У меня лучшие цены в сегменте удаленной бухгалтерии</div>
+        </div>
+        <div class="why_me_item">
+            <img class="why_me_icon" src="{{ url_for('static', filename='images/icons/4.png') }}" alt="">
+            <h4 class="why_me_title">Время</h4>
+            <div class="why_me_text">Я делаю все, в установленые сроки</div>
+        </div>
+        <div class="why_me_item">
+            <img class="why_me_icon" src="{{ url_for('static', filename='images/icons/5.png') }}" alt="">
+            <h4 class="why_me_title">Договор</h4>
+            <div class="why_me_text">Все происходит официально, никакой темноты</div>
+        </div>
+        <div class="why_me_item">
+            <img class="why_me_icon" src="{{ url_for('static', filename='images/icons/6.png') }}" alt="">
+            <h4 class="why_me_title">Обратная связь</h4>
+            <div class="why_me_text">Всегда на связи, даже если выходной</div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="why_me_header">
+        <h1 class="why_me_header_text">Какие услуги я могу предложить?</h1>
+    </div>
+</div>
+
+<div class="services">
+    <div class="container">
+        <div class="services_inner">
+            <div class="services_item">
+                <img src="{{ url_for('static', filename='images/services1.jpg') }}" alt="">
+            </div>
+            <div class="services_item">
+                <div class="services_header">Отчетность и налогообложение</div>
+                <div class="services_text"> <p>Формирование и отправка отчетности: <br />
+                    - ФНС, ПФР, ФСС, Росстат (в т.ч. нулевые отчетности) <br />
+                    - Работа с любой системой налогообложения (ООО, ИП) <br />
+                    - Сдача отчетности через интернет.</p>
+                </div>
+            </div>
+            <div class="services_item">
+                <img src="{{ url_for('static', filename='images/services2.jpg') }}" alt="">
+            </div>
+            <div class="services_item">
+                <div class="services_header">Бухгалтерский и налоговый учёт</div>
+                <div class="services_text">
+                    <p>- Формирование первичных документов <br />
+                        - Постановка и восстановление учета <br />
+                        - Консультация профессионального бухгалтера <br />
+                        - Удаленное ведение учёта</p>
+                </div>
+            </div>
+            <div class="services_item">
+                <img src="{{ url_for('static', filename='images/services3.jpg') }}" alt="">
+            </div>
+            <div class="services_item">
+                <div class="services_header">Кадровый учёт, расчет зарплаты</div>
+                <div class="services_text">
+                    <p> - Начисление зарплаты, больничных, отпускных, декретных и т.д.<br />
+                        - Исчисление "зарплатных" налогов и взносов <br />
+                        - Формирование платежей</p>
+                </div>
+            </div>
+            <div class="services_item">
+                <img src="{{ url_for('static', filename='images/services4.jpg') }}" alt="">
+            </div>
+            <div class="services_item">
+                <div class="services_header">Оптимизация налогов</div>
+                <div class="services_text">
+                    <p>- Помощь в выборе системы налогообложения новым и действующим ООО, ИП.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

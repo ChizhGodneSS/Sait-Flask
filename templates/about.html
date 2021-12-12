@@ -1,0 +1,37 @@
+{% extends 'shablon.html' %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+{% block title %}
+О себе
+{% endblock %}
+
+{% block section_title %}
+    <h1 class="section_title">Немного информации о себе</h1>
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="info">
+            <div class="info_item">
+                <img src="http://placehold.it/570x700" alt="">
+            </div>
+            <div class="info_item">
+                <div class="info_block">
+                    <div class="info_text">
+                        <p>Доброго времени суток, меня зовут Любовь. Я осуществляю ведение бухгалтерского учёта удалённо,
+                        с применением различных программных продуктов, например: 1С предприятие, Контур. Я успешно обслуживала
+                        компании из Москвы и Московской области на протяжении более 15 лет и продолжаю делать это по сей день.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
